@@ -1,9 +1,6 @@
-[![Build Status](https://circleci.com/gh/amrabed/Skeleton.svg?style=shield)](https://circleci.com/gh/amrabed/Skeleton)
-[![](https://sonarcloud.io/api/project_badges/measure?project=amrabed_Skeleton&metric=alert_status)](https://sonarcloud.io/dashboard?id=amrabed_Skeleton)
-[![Known Vulnerabilities](https://snyk.io/test/github/amrabed/Skeleton/badge.svg?targetFile=app%2Fbuild.gradle)](https://snyk.io/test/github/amrabed/Skeleton?targetFile=app%2Fbuild.gradle)
-[![GitHub issues](https://img.shields.io/github/issues/amrabed/Skeleton.svg)](https://github.com/amrabed/Skeleton/issues)
-[![GitHub (pre-)release](https://img.shields.io/github/release/amrabed/Skeleton/all.svg)](https://github.com/amrabed/Skeleton/releases)
+[![Build Status](https://circleci.com/gh/cur8d/android.svg?style=shield)](https://circleci.com/gh/cur8d/android)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/cur8d/android.svg)](https://github.com/cur8d/android/issues)
 
 ## Skeleton - Android App
 
@@ -16,7 +13,6 @@ A template project for Android applications that comes out of the box with:
 - [FastLane](https://fastlane.tools) App Automation
 - [CircleCI](https://circleci.com) Continuous Integration and Delivery
 - [SonarCloud](https://sonarcloud.io) Code Quality
-- [Snyk](https://snyk.io) Vulnerability Check
 - README file with [shield-style](https://shields.io) badges
 - MIT License file
 
