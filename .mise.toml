@@ -1,0 +1,40 @@
+[shell_alias]
+m = "mise run"
+b = "mise run build"
+t = "mise run test"
+l = "mise run lint"
+c = "mise run check"
+v = "mise run verify"
+
+[tasks.build]
+description = "Assemble debug APK"
+run = "./gradlew assembleDebug"
+alias = "b"
+
+[tasks.test]
+description = "Run unit tests"
+run = "./gradlew test"
+alias = "t"
+
+[tasks.lint]
+description = "Run Android lint"
+run = "./gradlew lint"
+alias = "l"
+
+[tasks.check]
+description = "Run all verification checks"
+run = "./gradlew check"
+alias = "c"
+
+[tasks.verify]
+description = "Run full project verification suite"
+depends = ["check"]
+alias = "v"
+
+[tasks.bundle]
+description = "Install bundler gem dependencies"
+run = "bundle check || bundle install"
+
+[tasks.clean]
+description = "Clean build artifacts"
+run = "./gradlew clean"
