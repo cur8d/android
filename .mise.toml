@@ -28,7 +28,7 @@ alias = "c"
 
 [tasks.verify]
 description = "Run full project verification suite"
-depends = ["check"]
+run = "./gradlew check assembleDebug"
 alias = "v"
 
 [tasks.bundle]

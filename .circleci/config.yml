@@ -3,7 +3,7 @@ version: 2.1
 executors:
   android:
     docker:
-      - image: circleci/android:api-29
+      - image: cimg/android:2026.11
 
 parameters:
   gradle-key:
