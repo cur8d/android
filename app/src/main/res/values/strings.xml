@@ -6,6 +6,8 @@
     <string name="itemRemoved">Item removed</string>
     <string name="undo">Undo</string>
     <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="done">Done</string>
     <string name="notSignedIn">Not signed in</string>
     <string name="signedIn">Signed in successfully</string>
 </resources>

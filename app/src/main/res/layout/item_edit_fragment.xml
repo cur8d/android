@@ -49,6 +49,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/defaultMargin"
         android:backgroundTint="@color/primaryColor"
+        android:contentDescription="@string/done"
         android:src="@drawable/done" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

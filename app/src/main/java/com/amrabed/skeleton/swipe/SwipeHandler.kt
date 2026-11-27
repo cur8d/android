@@ -2,9 +2,9 @@ package com.amrabed.skeleton.swipe
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.drawable.ColorDrawable
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.getColor
+import androidx.core.graphics.drawable.toDrawable
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.amrabed.skeleton.R
@@ -68,12 +68,12 @@ class SwipeHandler(private val context: Context, private val listener: DragListe
             context,
             if (dx > 0) R.drawable.hide else R.drawable.delete
         )
-        val background = ColorDrawable(
+        val background = (
             if (dx > 0) getColor(
                 context,
                 android.R.color.holo_orange_dark
             ) else getColor(context, android.R.color.holo_red_dark)
-        )
+        ).toDrawable()
         val view = holder.itemView
         val offset = 20
         if (icon != null) {

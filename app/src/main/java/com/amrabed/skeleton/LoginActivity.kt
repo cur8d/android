@@ -32,7 +32,7 @@ class LoginActivity : Activity() {
                     if (response == null) {
                         Toast.makeText(this, R.string.notSignedIn, Toast.LENGTH_LONG).show()
                     } else {
-                        val message = response.error?.message as String
+                        val message = response.error?.message ?: "Unknown error"
                         Log.e(NAME, message)
                         Toast.makeText(this, "Error: $message", Toast.LENGTH_LONG).show()
                     }
@@ -49,7 +49,7 @@ class LoginActivity : Activity() {
 
     companion object {
         const val SIGN_IN_REQUEST = 101
-        val NAME = MainActivity::class.java.simpleName
+        val NAME = LoginActivity::class.java.simpleName
     }
 
 }
